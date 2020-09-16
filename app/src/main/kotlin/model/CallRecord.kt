@@ -34,13 +34,5 @@ class CallRecord {
      */
     var requestResult: Boolean = false
 
-    companion object {
-        fun create(): CallRecord {
-            return CallRecord().apply {
-                requestTimeStamp = System.currentTimeMillis()
-                requestHost = HOST
-            }
-        }
-    }
 }
 

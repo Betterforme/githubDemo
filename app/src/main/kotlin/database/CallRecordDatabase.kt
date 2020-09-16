@@ -8,7 +8,7 @@ import github.demo.client.model.CallRecord
 import model.GitHubData
 /**
  *
- *说明：viewModel基类
+ *说明：database
  *@since: 2020-09-16
  *@author: shijie
  *

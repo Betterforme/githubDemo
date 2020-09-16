@@ -55,7 +55,7 @@ class RecordViewHold(itemView: View) : RecyclerView.ViewHolder(itemView) {
             callTimestamp.setTextColor(Color.RED)
             callResult.setTextColor(Color.RED)
         }else{
-            callResult.setTextColor(Color.BLUE)
+            callTimes.setTextColor(Color.BLUE)
             callTimestamp.setTextColor(Color.BLUE)
             callResult.setTextColor(Color.BLUE)
         }

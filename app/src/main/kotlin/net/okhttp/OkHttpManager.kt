@@ -4,7 +4,7 @@ import okhttp3.OkHttpClient
 
 /**
  *
- *说明：
+ *说明：暂不配置
  *@since: 2020-09-16
  *@author: shijie
  *

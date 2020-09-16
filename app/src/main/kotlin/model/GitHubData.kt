@@ -17,6 +17,7 @@ import com.google.gson.annotations.SerializedName
 data class GitHubData(
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0,
+
     @SerializedName("current_user_url")
     var currentUserUrl: String? = null,
 
