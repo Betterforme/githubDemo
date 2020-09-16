@@ -31,7 +31,6 @@ class MainActivity : BaseActivity<MainViewModel>() {
                 viewModel.saveDataToDatabase(true)
             }, {
                 viewModel.saveDataToDatabase(false)
-//                Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
             })
     }
 
