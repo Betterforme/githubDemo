@@ -6,7 +6,13 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import github.demo.client.model.CallRecord
 import model.GitHubData
-
+/**
+ *
+ *说明：viewModel基类
+ *@since: 2020-09-16
+ *@author: shijie
+ *
+ */
 @Dao
 interface RecordDao {
     @Query("SELECT * FROM tab_github_call_record ORDER BY id DESC LIMIT 1")

@@ -33,12 +33,10 @@ class RecordDataViewModel : BaseViewModel() {
 
     fun getNewRecord(): Observable<List<CallRecord>>? =
         Observable.fromCallable {
-            Log.e("RecordDataViewModel", recentId.toString())
             val data = databaseRepo.queryCalls(recentId)
             data.getOrNull(0)?.let {
                 recentId = it.id
             }
-            Log.e("RecordDataViewModel", recentId.toString() +"size ="+ data.size.toString())
             data
         }.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 

@@ -6,7 +6,13 @@ import androidx.room.RoomDatabase
 import github.demo.client.appContext
 import github.demo.client.model.CallRecord
 import model.GitHubData
-
+/**
+ *
+ *说明：viewModel基类
+ *@since: 2020-09-16
+ *@author: shijie
+ *
+ */
 @Database(entities = [CallRecord::class, GitHubData::class], version = 1, exportSchema = false)
 abstract class CallRecordDatabase : RoomDatabase() {
 
