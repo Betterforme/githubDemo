@@ -1,4 +1,4 @@
-package activity
+package ui.activity
 
 import android.content.Intent
 import android.util.Log
@@ -24,15 +24,14 @@ class MainActivity : BaseActivity<MainViewModel>() {
 
     override fun flowOfGetData() {
         disposable =
-            getData()
-                .subscribe({
-                    Log.e("data", it.toString())
-                    response_tv_github.text = it.toString()
-                    viewModel.getGithubInfo()
-                    viewModel.saveDataToDatabase(true)
-                }, {
-                    viewModel.saveDataToDatabase(false)
-                })
+            getData().subscribe({
+                response_tv_github.text = it.toString()
+
+                viewModel.getGithubInfo()
+                viewModel.saveDataToDatabase(true)
+            }, {
+                viewModel.saveDataToDatabase(false)
+            })
     }
 
     override fun flowOfSetupData() {

@@ -33,7 +33,7 @@ class MainViewModel : BaseViewModel() {
     }
 
     fun getGithubInfo(): Flowable<GitHubData> =
-        Flowable.interval(1, 5, TimeUnit.SECONDS)
+        Flowable.interval(0, 5, TimeUnit.SECONDS)
             .flatMap {
                 githubRepo.githubData()
             }.doOnNext {

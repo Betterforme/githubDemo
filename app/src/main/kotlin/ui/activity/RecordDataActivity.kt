@@ -1,16 +1,10 @@
-package activity
+package ui.activity
 
-import android.util.Log
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import base.BaseActivity
 import github.demo.client.R
 import github.demo.client.adapter.RecordAdapter
 import github.demo.client.rxbus.RxBus
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_call_record.*
 import viewmodel.RecordDataViewModel
 
