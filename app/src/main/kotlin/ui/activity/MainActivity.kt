@@ -1,7 +1,7 @@
 package ui.activity
 
 import android.content.Intent
-import android.util.Log
+import android.widget.Toast
 import base.BaseActivity
 import github.demo.client.R
 import io.reactivex.rxjava3.disposables.Disposable
